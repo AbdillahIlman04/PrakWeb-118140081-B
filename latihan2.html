@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form HTML</h1>
+    <form action="">
+        <p>
+            <label for="nama">Nama :</label>
+            <input type="text" name="nama" id="nama">
+        </p>
+        <p>
+            <label for="gender">Gender :</label>
+            <input type="radio" name="gender" id="gender">Man
+            <input type="radio" name="gender" id="gender">Woman
+        </p>
+        <p>
+            <label for="address">Adress :</label>
+            <input type="text" name="address" id="adress">
+        </p>
+         <p>
+            <label for="country">Country :</label>
+            <select name="country" id="country">
+            <option value="pil1">Indonesia</option>
+            </select>
+         </p> 
+         <p>
+             <label for="email">Email :</label>
+             <input type="email" name="email" id="email">
+         </p>
+
+        <p>
+            <label for="photo">Photo :</label>
+            <input type="file" id="poto" name="poto" style="display:none" onchange="document.getElementById('filename').value=this.value">
+            <input type="text" id="filename"> 
+            <input type="button" value="Browse" onclick="document.getElementById('poto').click()">
+        </p>
+        <p>
+         <label for="comment">Comment :</label>
+         <textarea cols="" rows="" name="coment" ></textarea>
+         <button type="submit" name="simpan">Submit</button>
+       </p>
+       <p>
+          <tr>
+              <td>
+                  Form Registrasi
+              </td>
+          </tr>
+       </p>
+       
+</form>
+</body>
+</html>

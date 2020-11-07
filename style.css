@@ -1,0 +1,59 @@
+
+#header{
+    width: 784px;
+    height: 200px;
+    background-color:#d1c0c0;
+    border-width: 5px;
+    border-style: solid ;
+    border-top-color: black;
+    border-right-color:black;
+    border-left-color: black;
+   
+   
+}
+
+#isi{
+    width: 200px;
+    height: auto;
+    background-color: yellow;
+    border-width: 5px;
+    border-top-width:1px;
+    border-style: solid;
+    border-right-color:black;
+    border-left-color: black;
+    border-bottom-color: black;
+        
+}
+
+#isi .sidebar_kanan{
+    margin-left: 195px;
+    margin-top: -90px;
+    margin-bottom: -5px;
+    width: 584px;
+    height: auto;
+    background-color:#d99e9e;
+    border-width:5px;
+    border-top-width: 3.5px;
+    border-style: solid;
+  
+    
+    
+}
+
+#footer{
+    width: 784px;
+    height: 100px;
+    background-color:#b997cc;
+    border-width: 5px;
+    border-top-width: 1px;
+    border-style: solid;
+    border-top-color: black;
+    border-right-color:black;
+    border-left-color: black;
+    border-bottom-color: black;
+    
+}
+#footer p{
+    margin-left: 12px;
+    margin-top: 1px;
+}
