@@ -1,0 +1,165 @@
+$mycolour :#006faa ;
+$bgcolor :#FFF;
+$align1 :center;
+* {
+	padding:0;
+	margin:0;
+	font-family: "segoe ui", arial, tahoma, sans-serif; 
+}
+
+body {
+	font-size:18px;
+	background-color:$bgcolor;
+}
+
+header {
+	width:100%;
+	background-color:$mycolour;
+	z-index:1000;
+}
+
+.menu-bar {
+	color:$bgcolor;
+	font-size:25px;
+	cursor:pointer;
+	padding:10px 12px;
+	margin-left:10px;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+.menu-bar:hover {
+	background-color:rgba(0, 0, 0, 0.1);
+	border-radius:50px;
+}
+
+#tag-menu {
+	display:none;
+}
+
+
+#tag-menu:checked {
+	~ div.beranda {
+		animation: slide-in 0.5s ease;
+		animation-fill-mode: forwards;
+	   }
+}
+
+.beranda {
+	position:fixed;
+	left:-280px;
+	background-color:$mycolour;
+	height:100%;
+	z-index:100;
+	width:230px;
+	animation: slide-out 0.5s ease;
+	animation-fill-mode: forwards;
+}
+
+.beranda {
+	ul {
+		li {
+			list-style:none;
+		}
+	}
+	
+}
+.beranda {
+	ul {
+		li {
+			a {
+				padding:10px 20px;
+				text-decoration:none;
+				display:block;
+				color:$bgcolor;
+				border-top:1px solid #059;
+			}
+		}
+	}
+}
+
+.beranda {
+	ul {
+		li a:hover{
+			background-color:rgba(0, 0, 0, 0.1);
+		}
+	}
+	
+}
+.beranda {
+	ul {
+		li {
+			a {
+				i {
+					width:50px;
+					height:35px;
+					text-align:$align1;
+					padding-top:15px;
+				}
+			}
+		}
+	}
+	
+}
+@keyframes slide-in {
+ from {left: -280px;}
+ to {left: 0;}
+}
+
+@keyframes slide-out {
+ from {left: 0;}
+ to {left: -280px;}
+}
+
+
+.content{
+  height: 85vh;
+  background-image: url('logo.jpg');
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: $align1;
+  align-items: $align1;
+}
+.content:after{
+	content:'';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.content{
+	h2{
+		color:$bgcolor;
+		padding:20px 25px ;
+		border:3px solid $bgcolor;
+		z-index: 1;
+	}
+}
+section{
+	padding: 50px 0;
+}
+section{
+	h3{
+		text-align: $align1;
+		padding: 20px 0;
+		margin-bottom: 20px;
+	}
+}
+footer{
+	padding: 12px 0;
+	background-color: #333;
+	color: $bgcolor;
+	text-align: $align1;
+}
+.label{
+	background-color:$mycolour;
+	color:$bgcolor;
+}
+.label{
+	p{
+		margin-left: 70px;
+	}
+}
